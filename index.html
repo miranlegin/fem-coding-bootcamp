@@ -1,38 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Coding Bootcamp Testimonials Slider</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
-<body>
 
-  “ I’ve been interested in coding for a while but never taken the jump, until now. 
-  I couldn’t recommend this course enough. I’m now in the job of my dreams and so 
-  excited about the future. ”
+<body id="container">
 
-  Tanya Sinclair
-  UX Engineer
 
-  “ If you want to lay the best foundation possible I’d recommend taking this course. 
-  The depth the instructors go into is incredible. I now feel so confident about 
-  starting up as a professional developer. ”
 
-  John Tarkpor
-  Junior Front-end Developer
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+
+  <svg class="bg" xmlns="http://www.w3.org/2000/svg" width="697" height="657">
+    <defs>
+      <linearGradient id="a" x1="31.368%" x2="100%" y1="70.497%" y2="22.772%">
+        <stop offset="0%" stop-color="#9975D0" />
+        <stop offset="100%" stop-color="#4A3FDB" />
+      </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+      <path fill="url(#a)"
+        d="M233.996 231.082c-62.714 60.37 48.746 169.37 176.07 259.677 127.324 90.307 187.825 151.88 269.763 73.005 81.938-78.874 114.518-247.228 0-332.682-114.518-85.453-383.12-60.369-445.833 0z"
+        transform="matrix(0 1 1 0 97 -97)" />
+      <path fill="#f4f4fc">
+        <animate attributeName="d" dur="15s" repeatCount="indefinite"
+          values="M377.5,295.5Q322,341,272,357.5Q222,374,161,348Q100,322,98,249Q96,176,155,134Q214,92,299,86.5Q384,81,408.5,165.5Q433,250,377.5,295.5Z; 
+
+          M397.5,333.5Q383,417,297,419Q211,421,129.5,384Q48,347,63,257Q78,167,145,125.5Q212,84,285.5,98.5Q359,113,385.5,181.5Q412,250,397.5,333.5Z;
+          
+          M364.5,296Q323,342,270.5,365.5Q218,389,138,365.5Q58,342,78.5,259.5Q99,177,151,110Q203,43,292.5,63.5Q382,84,394,167Q406,250,364.5,296Z;
+          
+          M377,314Q352,378,280.5,404.5Q209,431,179.5,364.5Q150,298,150.5,250Q151,202,173,105Q195,8,291.5,42.5Q388,77,395,163.5Q402,250,377,314Z;
+          
+          M377.5,295.5Q322,341,272,357.5Q222,374,161,348Q100,322,98,249Q96,176,155,134Q214,92,299,86.5Q384,81,408.5,165.5Q433,250,377.5,295.5Z" />
+      </path>
+
+      <g stroke="#D3629D" stroke-width="4">
+        <path class="path" d="M344 45.087L364.087 25l20.088 20.087L404.262 25l20.088 20.087L444.437 25"
+          pathLength="1" />
+        <path class="path" d="M344 63.087L364.087 43l20.088 20.087L404.262 43l20.088 20.087L444.437 43"
+          pathLength="1" />
+        <path class="path" d="M344 81.087L364.087 61l20.088 20.087L404.262 61l20.088 20.087L444.437 61"
+          pathLength="1" />
+        <path class="path" d="M344 99.087L364.087 79l20.088 20.087L404.262 79l20.088 20.087L444.437 79"
+          pathLength="1" />
+      </g>
+
+      <path fill="#CF6BCB"
+        d="M667 640a3 3 0 110 6 3 3 0 010-6zm-22 0a3 3 0 110 6 3 3 0 010-6zm-22 0a3 3 0 110 6 3 3 0 010-6zm-22 0a3 3 0 110 6 3 3 0 010-6zm-22 0a3 3 0 110 6 3 3 0 010-6zm-22 0a3 3 0 110 6 3 3 0 010-6zm-22 0a3 3 0 110 6 3 3 0 010-6zm-22 0a3 3 0 110 6 3 3 0 010-6zm-22 0a3 3 0 110 6 3 3 0 010-6zm0-22a3 3 0 110 6 3 3 0 010-6zm176 0a3 3 0 110 6 3 3 0 010-6zm-22 0a3 3 0 110 6 3 3 0 010-6zm-22 0a3 3 0 110 6 3 3 0 010-6zm-22 0a3 3 0 110 6 3 3 0 010-6zm-22 0a3 3 0 110 6 3 3 0 010-6zm-22 0a3 3 0 110 6 3 3 0 010-6zm-22 0a3 3 0 110 6 3 3 0 010-6zm-22 0a3 3 0 110 6 3 3 0 010-6zm0-22a3 3 0 110 6 3 3 0 010-6zm22 0a3 3 0 110 6 3 3 0 010-6zm22 0a3 3 0 110 6 3 3 0 010-6zm22 0a3 3 0 110 6 3 3 0 010-6zm22 0a3 3 0 110 6 3 3 0 010-6zm22 0a3 3 0 110 6 3 3 0 010-6zm22 0a3 3 0 110 6 3 3 0 010-6zm22 0a3 3 0 110 6 3 3 0 010-6zm-176 0a3 3 0 110 6 3 3 0 010-6zm22-22a3 3 0 110 6 3 3 0 010-6zm22 0a3 3 0 110 6 3 3 0 010-6zm22 0a3 3 0 110 6 3 3 0 010-6zm22 0a3 3 0 110 6 3 3 0 010-6zm22 0a3 3 0 110 6 3 3 0 010-6zm22 0a3 3 0 110 6 3 3 0 010-6zm22 0a3 3 0 110 6 3 3 0 010-6zm22 0a3 3 0 110 6 3 3 0 010-6zm-176 0a3 3 0 110 6 3 3 0 010-6z" />
+    </g>
+
+  </svg>
+
+  <main>
+
+    <article class="article">
+      <img class="article-image" src="/images/image-tanya.jpg" alt="">
+      <div class="article-text">
+        <img class="img-quotes" src="./images/pattern-quotes.svg" alt="">
+        <blockquote>“ I’ve been interested in coding for a while but never taken the jump, until now.
+          I couldn’t recommend this course enough. I’m now in the job of my dreams and so
+          excited about the future. ”</blockquote>
+        <p><strong>Tanya Sinclair</strong>UX Engineer</p>
+      </div>
+    </article>
+
+    <!-- <article class="article">
+      <img class="article-image" src="/images/image-john.jpg" alt="">
+      <div class="article-text">
+        <blockquote>“ If you want to lay the best foundation possible I’d recommend taking this course.
+          The depth the instructors go into is incredible. I now feel so confident about
+          starting up as a professional developer. ”</blockquote>
+        <p><strong>John Tarkpor</strong> Front-end Developer</p>
+      </div>
+    </article> -->
+
+
+
+  </main>
+
+  <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28"
+    preserveAspectRatio="none" shape-rendering="auto">
+    <defs>
+      <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+    </defs>
+    <g class="parallax">
+      <use xlink:href="#gentle-wave" x="48" y="0" />
+    </g>
+  </svg>
+
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+  <script src="./app.js"></script> -->
+
+
 </body>
+
 </html>

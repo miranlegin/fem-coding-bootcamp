@@ -1,0 +1,229 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+:root {
+  --dark-blue: hsl(240, 38%, 20%);
+  --grayish-blue: hsl(240, 18%, 77%);
+
+  --fw-light: 300;
+  --fw-regular: 500;
+  --fw-bold: 700;
+
+  --ff-base: 'Inter', sans-serif;
+
+  --timing: 10s;
+  --delay: 2.5s;
+}
+
+body {
+  font-family: var(--ff-base);
+  /* padding: 2rem; */
+}
+
+.bg {
+  position: absolute;
+  right: 10vw;
+  top: 10vh;
+  z-index: -1;
+}
+
+main {
+  max-width: 1110px;
+  margin-inline: auto;
+}
+
+article {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: center;
+  column-gap: 30px;
+  height: 100vh;
+}
+
+.article-image {
+  grid-column: 7 / -1;
+  grid-row: 1;
+  border-radius: 5px;
+  box-shadow: 0px 40px 50px -30px rgba(36, 36, 113, 0.495001);
+  z-index: -1;
+}
+
+.article-text {
+  position: relative;
+  grid-column: 1 / span 7;
+  grid-row: 1;
+}
+
+blockquote {
+  font-weight: var(--fw-light);
+  font-size: clamp(1.125rem, 0.6786rem + 1.9048vw, 2rem);
+  line-height: 1.35;
+  margin-bottom: 2rem;
+}
+
+.img-quotes {
+  position: absolute;
+  top: -4rem;
+  left: 95px;
+  animation: levitate 3s cubic-bezier(0.39, 0.58, 0.57, 1) infinite;
+}
+
+p {
+  font-weight: var(--fw-regular);
+  font-size: clamp(0.9375rem, 0.7781rem + 0.6803vw, 1.25rem);
+  line-height: 1.33;
+
+  color: var(--grayish-blue);
+}
+
+p strong {
+  color: var(--dark-blue);
+  margin-right: 0.625rem;
+}
+
+.waves {
+  position: fixed;
+  inset: 0;
+  top: auto;
+  margin-bottom: -7px; /*Fix for safari gap*/
+  max-height: 10rem;
+}
+
+.parallax > use {
+  animation: move-forever 15s cubic-bezier(0.25, 1, 0.5, 1) infinite;
+}
+
+.waves path {
+  fill: #f4f4fc;
+}
+
+.path {
+  /* stroke-dasharray: 1;
+  stroke-dashoffset: 1; */
+  /* animation: dash var(--timing) linear alternate infinite; */
+}
+
+.path:nth-child(2) {
+  animation-delay: calc(var(--delay) * 1);
+}
+
+.path:nth-child(3) {
+  animation-delay: calc(var(--delay) * 2);
+}
+
+.path:nth-child(4) {
+  animation-delay: calc(var(--delay) * 3);
+}
+
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 1;
+    stroke: #9975d0;
+  }
+  25% {
+    stroke-dashoffset: 0;
+    stroke: #d3629d;
+  }
+
+  26% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+
+    opacity: 0;
+  }
+}
+
+@keyframes levitate {
+  0%,
+  100% {
+    transform: 0;
+  }
+  10% {
+    transform: translateY(2rem);
+  }
+}
